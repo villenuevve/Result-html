@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CP 1</title>
+
+<style>
+
+    body {
+
+    background-color: rgb(252, 236, 255);
+
+    }
+
+    a:link, a:visited {
+
+    background-color: #d34da6;
+
+    color: rgb(201, 255, 251);
+
+    padding: 15px 25px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    }
+
+    a:hover, a:active {
+
+    background-color: rgb(255, 0, 102);
+
+    }
+
+    table, th, td {
+
+    border: 1px solid white;
+
+    border-collapse: collapse;
+
+    }
+
+    th, td {
+
+    background-color: #ffe4a9;
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Самостійна робота 1</h1>
+
+<h2 style="color:rgb(121, 1, 57);">з предмету WEB – орієнтовані технології. Основи Frontend та Backend розробок </h2>
+
+<p>Сподіваюсь, далі лабораторні будуть менше</p>
+<p style="text-align:center;">І таке вмію</p>
+
+<hr>
+
+<p>Перша робота з вебу<br> з обривом рядка</p>
+
+
+<a href="https://www.w3schools.com/html/">HTML уроки, за яким я навчилась це робити</a>
+
+
+<h2>Таблиця подружок</h2>
+
+<table style="width:100%">
+
+    <tr>
+
+    <th>Ім'я</th>
+
+    <th>Прізвище</th>
+
+    <th>Вік</th>
+
+    </tr>
+
+    <tr>
+
+    <td>Валерія</td>
+
+    <td>Гриценко</td>
+
+    <td>19</td>
+
+    </tr>
+
+    <tr>
+
+    <td>Жання</td>
+
+    <td>Петканич</td>
+
+    <td>19</td>
+
+    </tr>
+
+</table>
+
+<ul style="list-style-type:disc;">
+
+    <li>Раз</li>
+
+    <li>Два</li>
+
+    <li>Три</li>
+
+</ul>
+
+<form action='/action_page.html'>
+
+    <label for="fname">Ім’я:</label><br>
+
+    <input type="text" id="fname" name="fname" value="Владислава"><br>
+
+    <label for="lname">Прізвище:</label><br>
+
+    <input type="text" id="lname" name="lname" value="Тишкевич"><br><br>
+
+    <input type="submit" value="Відправити">
+
+</form>
+<style>
+    img {
+        width: 400px;  
+        height: auto; 
+    }
+</style>
+
+<img src="pexels-photo-18874947.jpg" alt="">
+
+Opinion about the photo: <input type="text" name="name">
+
+<input type="submit">
+
+</form> <form>
+    Choose your week:
+    <input type="week" name="week_year">
+</form>
+
+<form>
+    What is the time now?:
+    <input type="time" name="usr_time">
+</form> 
+
+<form>
+    Google search:
+    <input type="search" name="googlesearch">
+</form> 
+
+<form>
+    Birthday:
+    <input type="date" name="bday">
+</form>
+
+<form>
+    Choose color:
+    <input type="color" name="favcolor">
+</form>
+
+<br>
+<input type="button" onclick="alert('Слава Україні!')" value="Тицни мене!">
+<br>
+
+<form>
+    <input type="checkbox" name="vehicle1" value="Bike"> Кожен день має бути як 8 березня<br>
+    <input type="checkbox" name="vehicle2" value="Car"> Так, це правда
+</form>
+<br>
+
+<form>
+    Choose file: <input type="file" name="myFile">
+</form>
+
+<form action="/action_page.html" method="post" novalidate>
+    <input type="radio" name="choose" value="kanikuli" checked> Канікули<br>
+    <input type="radio" name="choose" value="vidpochinok"> Відпочинок<br>
+    <input type="radio" name="choose" value="other"> Інший вид розслаблення<br>
+    <input type="submit" value="Надіслати">
+</form>
+
+<br>
+<textarea name="message" rows="10" cols="30">
+
+The cat was playing in the garden.
+
+</textarea>
+
+<form action="/action_page.html" method="post"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+    0
+
+    <input type="range"  id="a" name="a" value="50">
+
+    100 +
+    <input type="number" id="b" name="b" value="50">
+
+    =
+
+    <output name="x" for="a b"></output>
+
+    <br><br>
+
+    <input type="submit">
+
+</form>
+
+
+<pre>
+
+І ось ідем у бою життєвому.
+Міцні, тверді, незламні мов граніт,
+
+Бо плач не дав свободи ще нікому,
+А хто борець, той здобуває світ.
+
+</pre>
+
+<script>
+
+function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+
+    if (sessionStorage.clickcount) {
+
+    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+
+    } else {
+
+    sessionStorage.clickcount = 1;
+
+    }
+
+    document.getElementById("result").innerHTML = "Ви натиснули кнопку " + sessionStorage.clickcount + " разів у цьому сеансі.";
+
+} else {
+
+    document.getElementById("result").innerHTML = "На жаль, ваш браузер не підтримує веб-сховище...";
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+<p><button onclick="clickCounter()" type="button">Тицни мене!</button></p>
+
+<div id="result"></div>
+
+<p>Натисніть кнопку, щоб побачити збільшення лічильника.</p>
+
+<p>Закрийте вкладку (або вікно) веб-браузера та спробуйте ще раз, і лічильник буде скинуто.</p>
+
+<svg width="300" height="200">
+
+<polygon points="100,10 40,198 190,78 10,78 160,198"
+
+style="fill:pink;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+
+<p>Код програмування:</p>
+<code>
+    x = 5;
+    y = 6;
+    z = x + y;
+</code>
+
+<p>Мій улюблений колір <del>синій</del> рожевий.</p>
+
+<h3>Hайважливіше наразі це <mark>свобода</mark></h3>
+
+<h4>Мій <span style="color:rgb(132, 11, 11)">найнижчий</span> заголовок</h4>
+
+</body>
+</html>
